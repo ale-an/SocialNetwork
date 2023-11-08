@@ -13,6 +13,7 @@ namespace SocialNetwork.BLL.Services
     {
         MessageService messageService;
         IUserRepository userRepository;
+
         public UserService()
         {
             userRepository = new UserRepository();
@@ -52,7 +53,6 @@ namespace SocialNetwork.BLL.Services
 
             if (this.userRepository.Create(userEntity) == 0)
                 throw new Exception();
-
         }
 
         public User Authenticate(UserAuthenticationData userAuthenticationData)
@@ -107,16 +107,16 @@ namespace SocialNetwork.BLL.Services
             var outgoingMessages = messageService.GetOutcomingMessagesByUserId(userEntity.id);
 
             return new User(userEntity.id,
-                          userEntity.firstname,
-                          userEntity.lastname,
-                          userEntity.password,
-                          userEntity.email,
-                          userEntity.photo,
-                          userEntity.favorite_movie,
-                          userEntity.favorite_book,
-                          incomingMessages,
-                          outgoingMessages
-                          );
+                userEntity.firstname,
+                userEntity.lastname,
+                userEntity.password,
+                userEntity.email,
+                userEntity.photo,
+                userEntity.favorite_movie,
+                userEntity.favorite_book,
+                incomingMessages,
+                outgoingMessages
+            );
         }
     }
 }

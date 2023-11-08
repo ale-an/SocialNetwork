@@ -9,6 +9,7 @@ public class MessageSendingView
 {
     UserService userService;
     MessageService messageService;
+
     public MessageSendingView(MessageService messageService, UserService userService)
     {
         this.messageService = messageService;

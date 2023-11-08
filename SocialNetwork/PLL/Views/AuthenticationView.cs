@@ -8,6 +8,7 @@ namespace SocialNetwork.PLL.Views;
 public class AuthenticationView
 {
     UserService userService;
+
     public AuthenticationView(UserService userService)
     {
         this.userService = userService;
@@ -35,7 +36,7 @@ public class AuthenticationView
 
         catch (WrongPasswordException)
         {
-            AlertMessage.Show("Пароль не корректный!");
+            AlertMessage.Show("Пароль некорректный!");
         }
 
         catch (UserNotFoundException)

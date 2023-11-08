@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNetwork", "SocialNetwork\SocialNetwork.csproj", "{EBF7365B-0134-438C-84DA-40EC39F9238B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNetwork.Tests", "SocialNetwork.Tests\SocialNetwork.Tests.csproj", "{596D826B-6BE6-4397-B771-1478798A4571}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{EBF7365B-0134-438C-84DA-40EC39F9238B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBF7365B-0134-438C-84DA-40EC39F9238B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBF7365B-0134-438C-84DA-40EC39F9238B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596D826B-6BE6-4397-B771-1478798A4571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596D826B-6BE6-4397-B771-1478798A4571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596D826B-6BE6-4397-B771-1478798A4571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596D826B-6BE6-4397-B771-1478798A4571}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

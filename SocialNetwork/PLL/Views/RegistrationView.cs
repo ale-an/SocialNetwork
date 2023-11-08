@@ -7,6 +7,7 @@ namespace SocialNetwork.PLL.Views;
 public class RegistrationView
 {
     UserService userService;
+
     public RegistrationView(UserService userService)
     {
         this.userService = userService;
