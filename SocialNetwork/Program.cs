@@ -11,7 +11,7 @@ namespace SocialNetwork
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Добро пожаловать в социальную сеть.");
+            Console.WriteLine("Добро пожаловать в социальную сеть!");
 
             while (true)
             {
@@ -35,7 +35,7 @@ namespace SocialNetwork
                             User user = userService.Authenticate(authenticationData);
 
                             Console.ForegroundColor = ConsoleColor.Green;
-                            Console.WriteLine("Вы успешно вошли в социальную сеть! Добро пожаловать {0}",
+                            Console.WriteLine("Вы успешно вошли в социальную сеть! Добро пожаловать, {0}",
                                 user.FirstName);
                             Console.ForegroundColor = ConsoleColor.White;
 
@@ -95,7 +95,7 @@ namespace SocialNetwork
                         catch (WrongPasswordException)
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("Пароль не корректный!");
+                            Console.WriteLine("Пароль некорректный!");
                             Console.ForegroundColor = ConsoleColor.White;
                         }
                         catch (UserNotFoundException)

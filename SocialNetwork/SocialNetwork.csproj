@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <Folder Include="DAL\DB\" />
+      <Folder Include="PLL\" />
     </ItemGroup>
 
     <ItemGroup>
